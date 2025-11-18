@@ -1,0 +1,94 @@
+/* Your original CSS */
+.header-auto-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0)); */
+    background-color: transparent;    
+    background: black;
+    height: 70px;
+    z-index: 1000;
+    transition: background 0.4s ease-in-out;
+}
+
+/* Inner container */
+.header-container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /* ADDED */
+}
+
+/* UL styling */
+.header-list ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Netflix logo (ADDED for new img logo) */
+.header-list ul li img {
+    width: 100px;
+    cursor: pointer;
+}
+
+/* Netflix logo text (unused since you use image but left untouched) */
+.header-list .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #e50914;
+    margin-right: 30px;
+}
+
+/* Menu items */
+.header-list ul li {
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.header-list ul li:hover {
+    color: #b3b3b3;
+}
+
+/* Solid black background on scroll (optional) */
+.header-auto-container.scrolled {
+    background: #141414;
+}
+
+
+/* ----------------------------- */
+/* NEW CSS FOR RIGHT SIDE ICONS  */
+/* ----------------------------- */
+
+.header-right ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-right ul li {
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.header-right ul li:hover {
+    color: #b3b3b3;
+}
+
+/* Slight spacing for last icon (dropdown) */
+.header-right ul li:last-child {
+    margin-right: 5px;
+}
