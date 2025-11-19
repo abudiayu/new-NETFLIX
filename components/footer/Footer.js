@@ -29,7 +29,7 @@ function Footer() {
                 <li><a href="#">Contact Us</a></li>
             </ul>
             <div className="footer-bottom">
-              <p>©ABUDY's Netflix — 2025 Movie App </p>
+              <p>©ABDUL QADIR's Netflix — 2025 Movie App </p>
             </div>
           </div>
 
