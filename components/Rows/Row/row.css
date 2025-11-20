@@ -1,0 +1,61 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+
+.row h2 {
+  margin-left: 20px;
+}
+
+/* NORMAL ROWS — scroll manually */
+.row__posters {
+  display: flex;
+  overflow-x: auto;  /* enable horizontal scrolling */
+  overflow-y: hidden;
+  padding: 20px;
+  gap: 12px;
+  scroll-behavior: smooth; /* smooth drag scroll */
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none; /* hide scrollbar */
+}
+
+.row__poster {
+  object-fit: contain;
+  max-height: 120px;
+  width: auto;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+}
+
+.row__posterLarge {
+  max-height: 250px;
+  width: auto;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
+
+/* LARGE ROW — auto marquee */
+.row__posters--liveflow {
+  display: flex;
+  gap: 12px;
+  white-space: nowrap;
+  overflow: hidden;          /* hide scrollbar */
+  animation: scrollMarquee 100s linear infinite; /* adjust speed */
+}
+
+@keyframes scrollMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--marqueeWidth));
+  }
+}

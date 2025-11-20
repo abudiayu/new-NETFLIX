@@ -1,10 +1,8 @@
-/* Banner.css */
 
-/* Container for the banner */
 .banner {
   color: white;
   object-fit: contain;
-  height: 448px;
+  height: 600px;
   position: relative;
 }
 
@@ -73,7 +71,7 @@
   background-image: linear-gradient(
     180deg,
     transparent,
-    rgba(37, 37, 37, 0.61),
+    rgba(37, 37, 37, 0.61), /* the backgroundu lay yalew bluer neger yeseralen new ke 180 deg jemiro*/
     #111
   );
   position: absolute;
