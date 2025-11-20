@@ -1,4 +1,4 @@
-/* Your original CSS */
+
 .header-auto-container {
     position: sticky;
     top: 0;
@@ -91,4 +91,69 @@
 /* Slight spacing for last icon (dropdown) */
 .header-right ul li:last-child {
     margin-right: 5px;
+}
+@media (max-width: 768px) {
+    .header-list ul li:not(:first-child) {
+        display: none;
+    }
+
+    .header-list ul.active li:not(:first-child) {
+        display: block;
+        padding: 12px 16px;
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease, background 0.3s ease;
+    }
+
+    .header-list ul.active li:not(:first-child):hover {
+        color: rgba(255, 255, 255, 0.356);
+    }
+
+    .header-list ul.active {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 90%;
+        background: rgba(7, 7, 7, 0);
+        backdrop-filter: blur(8px);
+        flex-direction: column;
+        z-index: 1000;
+        padding-left: 0;
+        margin-left: 5%;
+    }
+
+    .header-auto-container {
+        height: 60px;
+    }
+
+    .header-list ul li img {
+        width: 80px;
+    }
+
+    .header-right ul li {
+        font-size: 20px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-auto-container {
+        height: 55px;
+    }
+
+    .header-list ul li img {
+        width: 60px;
+    }
+
+    .header-right ul li {
+        font-size: 18px;
+        gap: 8px;
+    }
+
+    .header-list ul.active {
+        width: 95%;
+        margin-left: 2.5%;
+        top: 50px;
+    }
 }

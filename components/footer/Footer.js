@@ -29,7 +29,19 @@ function Footer() {
                 <li><a href="/">Contact Us</a></li>
             </ul>
             <div className="footer-bottom">
-              <p>©ABDUL QADIR's Netflix — 2025 Movie App </p>
+              <p>©ABDUL QADIR's Netflix — 2025 Movie App </p> <br></br>
+              <p style={{ color: "white" }}>
+                Contact Me:{" "}
+                <a href="mailto:abudiayuu@gmail.com" style={{ color: "#4da6ff" }}>
+                  abudiayuu@gmail.com
+                </a>
+               </p>
+              <p style={{ color: "white" }}>
+                Phone:{" "}
+                <a href="tel:+251901013902" style={{ color: "#4da6ff" }}>
+                  +251901013902
+                </a>
+              </p>               
             </div>
           </div>
 
